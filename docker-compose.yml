@@ -7,9 +7,9 @@ services:
     ports:
       - '5432:5432'
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 123321
-      POSTGRES_DB: zadanieTTT
+      POSTGRES_USER: ...
+      POSTGRES_PASSWORD: ...
+      POSTGRES_DB: ...
     volumes:
       - zadanieTTT:/var/lib/postgresql/data
 
@@ -20,7 +20,7 @@ services:
       - '9000:9000'
       - '5555:5555'
     environment:
-      DATABASE_URL: postgresql://postgres:123321@postgres-zabanie:5432/zadanieTTT?schema=public
+      DATABASE_URL: ...
     depends_on:
       - db
 
